@@ -1,0 +1,49 @@
+@import url(normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600&display=swap");
+
+:root {
+  --galacticBlue: #755cde;
+  --summerYellow: #f6a560;
+  --pink: #f39e9e;
+  --lightRed: #eb7565;
+  --cyan: #61c4b7;
+  --darkPurple: #552049;
+  --black: #030303;
+  --mediumBrown: #7a746e;
+  --lightCream: #fff7f0;
+
+  --fontFamily: "Plus Jakarta Sans", sans-serif;
+  --medium: 500;
+  --bold: 600;
+
+  --p: 1.8rem;
+  --p-Line: 2.8rem;
+
+  --heading-L: 5.6rem;
+  --heading-L-Line: 7rem;
+
+  --heading-M: 4rem;
+  --heading-M-Line: 5.1rem;
+
+  --heading-S: 3.2rem;
+  --heading-S-Line: 4rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--fontFamily);
+  box-sizing: border-box;
+  color: var(--lightCream);
+}
