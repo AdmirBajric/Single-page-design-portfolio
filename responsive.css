@@ -1,0 +1,224 @@
+@media (width <= 768px) {
+}
+
+@media (width <= 375px) {
+  #container {
+    width: 37.5rem;
+    height: 321.4rem;
+    background-color: var(--lightCream);
+    overflow: hidden;
+  }
+
+  .consultation {
+    width: 34.3rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .consultation img {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  .btn-consultation {
+    border: none;
+    width: 17.6rem;
+    height: 4.4rem;
+    background-color: var(--black);
+    border-radius: 8.8rem;
+    color: var(--lightCream);
+    font-size: 1.4rem;
+    font-weight: var(--light);
+    line-height: 2.8rem;
+  }
+
+  .btn-consultation:hover {
+    background-color: var(--galacticBlue);
+  }
+
+  .btn-consultation:active {
+    transform: scale(0.9);
+  }
+
+  #header {
+    width: 34.3rem;
+    height: 21rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.2rem;
+  }
+
+  #header h1 {
+    width: 34.3rem;
+    height: 8.8rem;
+    font-size: 3.6rem;
+    font-weight: var(--light);
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 1.8rem;
+  }
+
+  #header p {
+    width: 29rem;
+    height: 7.8rem;
+    font-size: 1.6rem;
+    font-weight: var(--light);
+    line-height: 2.6rem;
+    color: var(--mediumBrown);
+    text-align: center;
+  }
+
+  #main {
+    width: 34.3rem;
+    height: 240.4rem;
+  }
+
+  #pattern {
+    width: 34.3rem;
+    height: 116.4rem;
+    display: grid;
+    grid-template-columns: 34.3rem;
+    grid-template-rows: 36.4rem 18.2rem 15.8rem 18.2rem 18.2rem;
+    grid-template-areas:
+      "graphic-design"
+      "ui-ux-apps"
+      "illustrations"
+      "photography"
+      "motion-graphics";
+    column-gap: 2.5rem;
+    row-gap: 2.4rem;
+  }
+
+  .graphic-design {
+    grid-area: "graphic-design";
+    width: 34.3em;
+    height: 36.4rem;
+    background-color: var(--galacticBlue);
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .graphic-design img {
+    position: absolute;
+    top: 2.4rem;
+    left: 19.1rem;
+  }
+
+  .graphic-design p {
+    width: 21rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 31rem;
+    left: 2.4rem;
+    color: var(--white);
+    font-size: 2.4rem;
+    font-weight: var(--light);
+  }
+
+  .ui-ux-apps {
+    grid-area: "ux-ui-apps";
+    width: 34.3rem;
+    height: 18.2rem;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2.5rem;
+  }
+
+  .ui-ux {
+    width: 15.9rem;
+    height: 18.2rem;
+    background-color: var(--summerYellow);
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .ui-ux img {
+    position: absolute;
+    top: 2.4rem;
+    left: 7.1rem;
+  }
+
+  .ui-ux p {
+    width: 8.2rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 12.8rem;
+    left: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: var(--light);
+    color: var(--white);
+  }
+
+  /* Stao ovdje trea nastaviti ove patterne, doso sam do 3 i treba sad dalje namjestat text i sliku */
+
+  .apps {
+    width: 15.9rem;
+    height: 18.2rem;
+    background-color: var(--pink);
+    border-radius: 8px;
+  }
+
+  .illustrations {
+    grid-area: "illustrations";
+    width: 34.3rem;
+    height: 15.8rem;
+    background-color: var(--lightRed);
+    border-radius: 8px;
+  }
+
+  .photography {
+    grid-area: "photography";
+    width: 34.3rem;
+    height: 18.2rem;
+    background-color: var(--cyan);
+    border-radius: 8px;
+  }
+
+  .motion-graphics {
+    grid-area: "motion-graphics";
+    width: 34.3rem;
+    height: 18.2rem;
+    background-color: var(--darkPurple);
+    border-radius: 8px;
+  }
+
+  #about {
+    width: 34.3rem;
+    height: 60.2rem;
+  }
+
+  .designer {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .designer img {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .heading {
+    width: 34.3rem;
+    height: 26.2rem;
+  }
+
+  #projects {
+    width: 141rem;
+    height: 33.8rem;
+  }
+
+  .projects-slider {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #footer {
+    width: 34.3rem;
+    height: 35.2rem;
+  }
+}

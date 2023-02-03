@@ -11,8 +11,10 @@
   --black: #030303;
   --mediumBrown: #7a746e;
   --lightCream: #fff7f0;
+  --white: #ffffff;
 
   --fontFamily: "Plus Jakarta Sans", sans-serif;
+  --light: 400;
   --medium: 500;
   --bold: 600;
 
@@ -42,8 +44,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: var(--fontFamily);
   box-sizing: border-box;
-  color: var(--lightCream);
 }
