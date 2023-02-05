@@ -357,21 +357,10 @@
     justify-content: space-between;
   }
 
-  .arrow-left {
+  .arrow-left-right {
     width: 6.4rem;
     height: 6.4rem;
-    background: #030303;
-    background-blend-mode: normal;
-    border-radius: 3.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .arrow-right {
-    width: 6.4rem;
-    height: 6.4rem;
-    background: #030303;
+    background: var(--black);
     background-blend-mode: normal;
     border-radius: 3.2rem;
     display: flex;
