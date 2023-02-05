@@ -347,6 +347,43 @@
     border-radius: 1rem;
   }
 
+  .arrows {
+    width: 14.4rem;
+    height: 6.4rem;
+    position: absolute;
+    left: 62.5rem;
+    top: 26rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .arrow-left {
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #030303;
+    background-blend-mode: normal;
+    border-radius: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow-right {
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #030303;
+    background-blend-mode: normal;
+    border-radius: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrows img {
+    width: 1.48rem;
+    height: 1.6rem;
+  }
+
   #footer {
     width: 34.3rem;
     height: 35.2rem;
