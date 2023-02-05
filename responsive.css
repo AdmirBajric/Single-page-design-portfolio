@@ -376,12 +376,12 @@
   #footer {
     width: 34.3rem;
     height: 35.2rem;
-    margin-top: 10rem;
     background-color: var(--black);
     border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
   }
 
   .footer-heading {
@@ -390,6 +390,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
 
   .footer-heading h3 {
@@ -409,5 +410,18 @@
     font-weight: var(--light);
     line-height: 2.6rem;
     text-align: center;
+  }
+
+  .footer-heading button {
+    width: 17.6rem;
+    height: 4.4rem;
+    border: none;
+    border-radius: 2.8rem;
+    background: var(--lightRed);
+    background-blend-mode: normal;
+    color: var(--lightCream);
+    font-size: 1.4rem;
+    font-weight: var(--light);
+    line-height: 2.8rem;
   }
 }
