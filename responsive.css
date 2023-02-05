@@ -320,11 +320,31 @@
   #projects {
     width: 141rem;
     height: 33.8rem;
+    position: absolute;
+    left: -51.25rem;
+    margin-top: 10rem;
+  }
+
+  #projects h3 {
+    color: var(--black);
+    font-size: 2.4rem;
+    font-weight: var(--light);
+    text-align: center;
   }
 
   .projects-slider {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 5rem;
+  }
+
+  .projects-slider img {
+    width: 27rem;
+    height: 18rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    border-radius: 1rem;
   }
 
   #footer {
