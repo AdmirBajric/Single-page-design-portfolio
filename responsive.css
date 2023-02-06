@@ -7,6 +7,10 @@
     height: 321.4rem;
     background-color: var(--lightCream);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .consultation {
@@ -338,6 +342,7 @@
     justify-content: center;
     position: absolute;
     top: 5rem;
+    transition: all 1s ease-in-out;
   }
 
   .projects-slider img {
@@ -423,5 +428,17 @@
     font-size: 1.4rem;
     font-weight: var(--light);
     line-height: 2.8rem;
+  }
+
+  .footer-heading button:hover {
+    background-color: var(--summerYellow);
+  }
+
+  .footer-heading button:active {
+    transform: scale(0.9);
+  }
+
+  .slide {
+    transition: all 1s ease-in-out;
   }
 }
