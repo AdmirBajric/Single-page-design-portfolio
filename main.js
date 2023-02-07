@@ -2,18 +2,23 @@ const arrowLeft = document.querySelector(".arrow-left");
 const projectsSlider = document.querySelector(".projects-slider");
 
 arrowLeft.addEventListener("click", (e) => {
-  const slides = document.querySelectorAll(".slide");
-  let newHtml = ``;
-
-  let imgShowing = slides[0].id;
-
-  for (let i = 0; i < slides.length; i++) {
-    newHtml += `<img id=${imgShowing} class="slide" src="./assets/image-slide-${imgShowing}.jpg" alt="Image ${imgShowing}" />`;
-  }
-
-  projectsSlider.innerHTML = "";
-  projectsSlider.innerHTML = newHtml;
+  refreshImages(-1);
 });
+
+const refreshImages = (num) => {
+  const slides = document.querySelectorAll(".slide");
+  projectsSlider.innerHTML = "";
+
+  console.log(num >= -1);
+  for (let i = 0; i < slides.length; i++) {
+    projectsSlider.innerHTML += `<img
+        id=${num}
+        class="slide"
+        src="./assets/image-slide-${num}.jpg"
+        alt="Image ${num}"
+      />`;
+  }
+};
 
 const fillImages = () => {
   projectsSlider.innerHTML = `<img
