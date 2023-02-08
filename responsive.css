@@ -342,7 +342,7 @@
     justify-content: center;
     position: absolute;
     top: 5rem;
-    transition: all 1s ease-in-out;
+    transition: transform 0.5s;
   }
 
   .projects-slider img {

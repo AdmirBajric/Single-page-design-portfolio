@@ -1,56 +1,42 @@
 const arrowLeft = document.querySelector(".arrow-left");
+const arrowRight = document.querySelector(".arrow-right");
 const projectsSlider = document.querySelector(".projects-slider");
 
+let dim = [280, 560];
+let left = [];
+let right = [];
+
 arrowLeft.addEventListener("click", (e) => {
-  refreshImages(-1);
+  scrollImg("-", left);
 });
 
-const refreshImages = (num) => {
-  const slides = document.querySelectorAll(".slide");
-  projectsSlider.innerHTML = "";
+arrowRight.addEventListener("click", (e) => {
+  scrollImg("+", right);
+});
 
-  console.log(num >= -1);
-  for (let i = 0; i < slides.length; i++) {
-    projectsSlider.innerHTML += `<img
-        id=${num}
-        class="slide"
-        src="./assets/image-slide-${num}.jpg"
-        alt="Image ${num}"
-      />`;
+const scrollImg = (option, name) => {
+  if (left.length < 2 && name === left) {
+    console.log("left");
+    left.push(dim[left.length]);
+
+    projectsSlider.style.transform = `translateX(${option}${
+      left[left.length - 1]
+    }px)`;
+    left.length === 2 ? (arrowLeft.style.opacity = 0) : null;
+  } else if (right.length < 2 && name === right) {
+    console.log("right");
+    right.push(dim[right.length]);
+
+    projectsSlider.style.transform = `translateX(${option}${
+      right[right.length - 1]
+    }px)`;
+  } else {
+    console.log("test");
+    projectsSlider.style.transform = `translateX(${option}${
+      name[name.length - 1] - 280
+    }px)`;
+    console.log(name);
+    name.pop();
+    console.log(name);
   }
 };
-
-const fillImages = () => {
-  projectsSlider.innerHTML = `<img
-    id="1"
-    class="slide"
-    src="./assets/image-slide-1.jpg"
-    alt="Image 1"
-  />
-  <img
-    id="2"
-    class="slide"
-    src="./assets/image-slide-2.jpg"
-    alt="Image 2"
-  />
-  <img
-    id="3"
-    class="slide"
-    src="./assets/image-slide-3.jpg"
-    alt="Image 3"
-  />
-  <img
-    id="4"
-    class="slide"
-    src="./assets/image-slide-4.jpg"
-    alt="Image 4"
-  />
-  <img
-    id="5"
-    class="slide"
-    src="./assets/image-slide-5.jpg"
-    alt="Image 5"
-  />`;
-};
-
-fillImages();
