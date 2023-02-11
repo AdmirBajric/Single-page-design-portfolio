@@ -327,6 +327,7 @@
     position: absolute;
     left: -51.25rem;
     margin-top: 10rem;
+    overflow: hidden;
   }
 
   #projects h3 {
@@ -343,6 +344,7 @@
     position: absolute;
     top: 5rem;
     transition: transform 0.5s;
+    overflow: hidden;
   }
 
   .projects-slider img {

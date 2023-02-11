@@ -1,42 +1,16 @@
-const arrowLeft = document.querySelector(".arrow-left");
-const arrowRight = document.querySelector(".arrow-right");
-const projectsSlider = document.querySelector(".projects-slider");
+const slider = document.querySelector(".projects-slider");
+const images = document.querySelectorAll(".slide");
+const leftArrow = document.querySelector(".arrow-left");
+const rightArrow = document.querySelector(".arrow-right");
 
-let dim = [280, 560];
-let left = [];
-let right = [];
+let current = 0;
 
-arrowLeft.addEventListener("click", (e) => {
-  scrollImg("-", left);
+leftArrow.addEventListener("click", function () {
+  current--;
+  slider.style.transform = `translateX(${-current * 280}px)`;
 });
 
-arrowRight.addEventListener("click", (e) => {
-  scrollImg("+", right);
+rightArrow.addEventListener("click", function () {
+  current++;
+  slider.style.transform = `translateX(${-current * 280}px)`;
 });
-
-const scrollImg = (option, name) => {
-  if (left.length < 2 && name === left) {
-    console.log("left");
-    left.push(dim[left.length]);
-
-    projectsSlider.style.transform = `translateX(${option}${
-      left[left.length - 1]
-    }px)`;
-    left.length === 2 ? (arrowLeft.style.opacity = 0) : null;
-  } else if (right.length < 2 && name === right) {
-    console.log("right");
-    right.push(dim[right.length]);
-
-    projectsSlider.style.transform = `translateX(${option}${
-      right[right.length - 1]
-    }px)`;
-  } else {
-    console.log("test");
-    projectsSlider.style.transform = `translateX(${option}${
-      name[name.length - 1] - 280
-    }px)`;
-    console.log(name);
-    name.pop();
-    console.log(name);
-  }
-};
