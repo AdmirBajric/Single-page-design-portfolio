@@ -265,6 +265,10 @@
     width: 34.3rem;
     height: 60.2rem;
     margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .designer {
@@ -442,8 +446,5 @@
 
   .slide {
     transition: all 1s ease-in-out;
-  }
-
-  .test {
   }
 }
