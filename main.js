@@ -3,7 +3,6 @@ const images = document.querySelectorAll(".slide");
 const leftArrow = document.querySelector(".arrow-left");
 const rightArrow = document.querySelector(".arrow-right");
 
-let freezeListener = false;
 let x = "";
 let y = "";
 let current = 0;
