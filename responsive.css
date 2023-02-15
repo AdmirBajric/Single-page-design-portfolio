@@ -84,15 +84,11 @@
     display: grid;
     grid-template-columns: 33.3rem 33.3rem;
     grid-template-rows: 18.2rem 15.8rem 18.2rem;
-    grid-template-areas:
-      "graphic-design ui-ux-apps"
-      "graphic-design illustrations"
-      "photography motion-graphics";
     gap: 2.4rem;
   }
 
   .graphic-design {
-    grid-area: "graphic-design";
+    grid-area: 1 / 1 / 3 / 2;
     width: 33.3em;
     height: 36.4rem;
     background-color: var(--galacticBlue);
@@ -118,7 +114,6 @@
   }
 
   .ui-ux-apps {
-    grid-area: "ui-ux-apps";
     width: 33.3rem;
     height: 18.2rem;
     display: grid;
@@ -177,7 +172,6 @@
   }
 
   .illustrations {
-    grid-area: "illustrations";
     width: 33.3rem;
     height: 15.8rem;
     background-color: var(--lightRed);
@@ -203,7 +197,6 @@
   }
 
   .photography {
-    grid-area: "photography";
     width: 33.3rem;
     height: 18.2rem;
     background-color: var(--cyan);
@@ -229,7 +222,6 @@
   }
 
   .motion-graphics {
-    grid-area: "motion-graphics";
     width: 33.3rem;
     height: 18.2rem;
     background-color: var(--darkPurple);
@@ -313,7 +305,7 @@
   }
 }
 
-@media (width <= 375px) {
+/* @media (width <= 375px) {
   #container {
     width: 37.5rem;
     height: 321.4rem;
@@ -759,4 +751,4 @@
   .slide {
     transition: all 1s ease-in-out;
   }
-}
+} */
