@@ -429,8 +429,6 @@
   }
 }
 
-/* Break */
-
 @media (width <= 375px) {
   #container {
     width: 37.5rem;
