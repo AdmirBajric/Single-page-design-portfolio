@@ -251,35 +251,36 @@
   }
 
   #about {
-    width: 77.2rem;
-    height: 36.4rem;
-    margin-top: 12rem;
+    width: 111rem;
+    height: 44.5rem;
+    margin-top: 13.6rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: -4.4rem;
+    align-items: center;
+    margin-left: 0rem;
   }
 
   .designer {
-    width: 36.4rem;
-    height: 36.4rem;
+    width: 44.5rem;
+    height: 44.5rem;
   }
 
   .designer img {
-    width: 36.4rem;
-    height: 36.4rem;
+    width: 44.5rem;
+    height: 44.5rem;
   }
 
   .heading {
-    width: 33.9rem;
-    height: 36.4rem;
+    width: 54rem;
+    height: 30.6rem;
     display: flex;
     flex-direction: column;
   }
 
   .heading h2 {
     color: var(--black);
-    font-size: 3.2rem;
+    font-size: 4rem;
     font-weight: var(--light);
   }
 
@@ -287,15 +288,15 @@
     color: var(--mediumBrown);
     font-size: 1.8rem;
     font-weight: var(--light);
-    line-height: 2.6rem;
-    margin-top: 2.7rem;
+    line-height: 2.8rem;
+    margin-top: 3.8rem;
   }
 
   .designer-consultation {
     width: 22.8rem;
     height: 5.6rem;
     border: none;
-    margin-top: 2.4rem;
+    margin-top: 3.2rem;
     border-radius: 2.8rem;
     background: var(--lightRed);
     color: var(--lightCream);
@@ -312,9 +313,8 @@
     width: 282rem;
     height: 57.6rem;
     position: absolute;
-    left: -104.5rem;
-    margin-top: 12rem;
-    /* overflow: hidden; */
+    left: -71.5rem;
+    margin-top: 8.8rem;
   }
 
   #projects h3 {
@@ -368,22 +368,22 @@
   }
 
   #footer {
-    width: 69rem;
-    height: 35.2rem;
+    width: 111rem;
+    height: 32rem;
     background-color: var(--black);
     border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 5.6rem;
-    margin-top: 12rem;
+    margin-top: 8.8rem;
   }
 
   .footer-heading {
-    width: 54rem;
-    height: 23.2rem;
+    width: 95rem;
+    height: 15.9rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
