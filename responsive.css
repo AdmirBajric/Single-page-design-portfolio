@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 3.4rem;
-    margin-bottom: 6.4rem;
+    margin-bottom: 6.6rem;
   }
 
   .consultation img {
@@ -30,7 +30,7 @@
     background-color: var(--black);
     border-radius: 11.4rem;
     color: var(--lightCream);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: var(--light);
     line-height: 2.8rem;
   }
@@ -44,52 +44,55 @@
   }
 
   #header {
-    width: 69rem;
-    height: 13.8rem;
+    width: 73.9rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 6.4rem;
+    margin-bottom: 8rem;
   }
 
   #header h1 {
-    width: 69rem;
-    height: 5.3rem;
-    font-size: 4.4rem;
+    width: 73.9rem;
+    height: 6.8rem;
+    font-size: 5.5rem;
     font-weight: var(--light);
     color: var(--black);
     text-align: center;
-    margin-bottom: 2.9rem;
+    margin-bottom: 2.6rem;
   }
 
   #header p {
-    width: 57.3rem;
+    width: 73rem;
     height: 5.6rem;
     font-size: 1.8rem;
     font-weight: var(--light);
-    line-height: 2.6rem;
+    line-height: 2.8rem;
     color: var(--mediumBrown);
     text-align: center;
   }
 
   #main {
-    width: 69rem;
-    height: 175rem;
+    width: 111.1rem;
+    height: 160.9rem;
   }
 
   #pattern {
-    width: 69rem;
-    height: 57rem;
+    width: 111.1rem;
+    height: 36.4rem;
     display: grid;
-    grid-template-columns: 33.3rem 33.3rem;
-    grid-template-rows: 18.2rem 15.8rem 18.2rem;
+    grid-template-columns: 35.4rem 35.4rem 35.4rem;
+    grid-template-rows: 18.2rem 18.2rem;
+    grid-template-areas:
+      "graphic-design ui-ux-apps photography"
+      "graphic-design illustrations motion-graphics";
     gap: 2.4rem;
   }
 
   .graphic-design {
     grid-area: 1 / 1 / 3 / 2;
-    width: 33.3em;
+    width: 35.4em;
     height: 36.4rem;
     background-color: var(--galacticBlue);
     border-radius: 8px;
@@ -99,7 +102,7 @@
   .graphic-design img {
     position: absolute;
     top: 2.4rem;
-    left: 18.1rem;
+    left: 20.2rem;
   }
 
   .graphic-design p {
@@ -114,15 +117,15 @@
   }
 
   .ui-ux-apps {
-    width: 33.3rem;
+    width: 35.4rem;
     height: 18.2rem;
     display: grid;
     grid-auto-flow: column;
-    column-gap: 2.5rem;
+    column-gap: 2.4rem;
   }
 
   .ui-ux {
-    width: 15.5rem;
+    width: 16.4rem;
     height: 18.2rem;
     background-color: var(--summerYellow);
     border-radius: 8px;
@@ -132,7 +135,7 @@
   .ui-ux img {
     position: absolute;
     top: 2.4rem;
-    left: 7rem;
+    left: 7.6rem;
   }
 
   .ui-ux p {
@@ -147,7 +150,7 @@
   }
 
   .apps {
-    width: 15.5rem;
+    width: 16.4rem;
     height: 18.2rem;
     background-color: var(--pink);
     position: relative;
@@ -157,7 +160,7 @@
   .apps img {
     position: absolute;
     top: 2.4rem;
-    left: 7rem;
+    left: 7.6rem;
   }
 
   .apps p {
@@ -172,7 +175,8 @@
   }
 
   .illustrations {
-    width: 33.3rem;
+    grid-area: 2 / 2 / 3 / 3;
+    width: 35.4rem;
     height: 15.8rem;
     background-color: var(--lightRed);
     border-radius: 8px;
@@ -182,7 +186,7 @@
   .illustrations img {
     position: absolute;
     top: 2.4rem;
-    left: 18.7rem;
+    left: 20rem;
   }
 
   .illustrations p {
@@ -197,7 +201,7 @@
   }
 
   .photography {
-    width: 33.3rem;
+    width: 35.4rem;
     height: 18.2rem;
     background-color: var(--cyan);
     position: relative;
@@ -207,7 +211,7 @@
   .photography img {
     position: absolute;
     top: 2.4rem;
-    left: 14.9rem;
+    left: 17rem;
   }
 
   .photography p {
@@ -222,8 +226,8 @@
   }
 
   .motion-graphics {
-    width: 33.3rem;
-    height: 18.2rem;
+    width: 35.4rem;
+    height: 15.8rem;
     background-color: var(--darkPurple);
     position: relative;
     border-radius: 8px;
@@ -232,14 +236,14 @@
   .motion-graphics img {
     position: absolute;
     top: 2.4rem;
-    left: 18.1rem;
+    left: 20rem;
   }
 
   .motion-graphics p {
     width: 22.7rem;
     height: 2.9rem;
     position: absolute;
-    top: 12.8rem;
+    top: 10.4rem;
     left: 2.4rem;
     font-size: 2.4rem;
     font-weight: var(--light);
