@@ -1,3 +1,434 @@
+@media (width <= 1440px) {
+  #container {
+    width: 144rem;
+    height: 259.5rem;
+    background-color: var(--lightCream);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .consultation {
+    width: 111.1rem;
+    height: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.4rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .consultation img {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+
+  .btn-consultation {
+    border: none;
+    width: 22.8rem;
+    height: 5.6rem;
+    background-color: var(--black);
+    border-radius: 11.4rem;
+    color: var(--lightCream);
+    font-size: 1.4rem;
+    font-weight: var(--light);
+    line-height: 2.8rem;
+  }
+
+  .btn-consultation:hover {
+    background-color: var(--galacticBlue);
+  }
+
+  .btn-consultation:active {
+    transform: scale(0.9);
+  }
+
+  #header {
+    width: 69rem;
+    height: 13.8rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6.4rem;
+  }
+
+  #header h1 {
+    width: 69rem;
+    height: 5.3rem;
+    font-size: 4.4rem;
+    font-weight: var(--light);
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 2.9rem;
+  }
+
+  #header p {
+    width: 57.3rem;
+    height: 5.6rem;
+    font-size: 1.8rem;
+    font-weight: var(--light);
+    line-height: 2.6rem;
+    color: var(--mediumBrown);
+    text-align: center;
+  }
+
+  #main {
+    width: 69rem;
+    height: 175rem;
+  }
+
+  #pattern {
+    width: 69rem;
+    height: 57rem;
+    display: grid;
+    grid-template-columns: 33.3rem 33.3rem;
+    grid-template-rows: 18.2rem 15.8rem 18.2rem;
+    gap: 2.4rem;
+  }
+
+  .graphic-design {
+    grid-area: 1 / 1 / 3 / 2;
+    width: 33.3em;
+    height: 36.4rem;
+    background-color: var(--galacticBlue);
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .graphic-design img {
+    position: absolute;
+    top: 2.4rem;
+    left: 18.1rem;
+  }
+
+  .graphic-design p {
+    width: 21rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 31rem;
+    left: 2.4rem;
+    color: var(--white);
+    font-size: 2.4rem;
+    font-weight: var(--light);
+  }
+
+  .ui-ux-apps {
+    width: 33.3rem;
+    height: 18.2rem;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2.5rem;
+  }
+
+  .ui-ux {
+    width: 15.5rem;
+    height: 18.2rem;
+    background-color: var(--summerYellow);
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .ui-ux img {
+    position: absolute;
+    top: 2.4rem;
+    left: 7rem;
+  }
+
+  .ui-ux p {
+    width: 8.2rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 12.8rem;
+    left: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: var(--light);
+    color: var(--white);
+  }
+
+  .apps {
+    width: 15.5rem;
+    height: 18.2rem;
+    background-color: var(--pink);
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .apps img {
+    position: absolute;
+    top: 2.4rem;
+    left: 7rem;
+  }
+
+  .apps p {
+    width: 7.3rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 12.8rem;
+    left: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: var(--light);
+    color: var(--white);
+  }
+
+  .illustrations {
+    width: 33.3rem;
+    height: 15.8rem;
+    background-color: var(--lightRed);
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .illustrations img {
+    position: absolute;
+    top: 2.4rem;
+    left: 18.7rem;
+  }
+
+  .illustrations p {
+    width: 16.2rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 10.4rem;
+    left: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: var(--light);
+    color: var(--white);
+  }
+
+  .photography {
+    width: 33.3rem;
+    height: 18.2rem;
+    background-color: var(--cyan);
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .photography img {
+    position: absolute;
+    top: 2.4rem;
+    left: 14.9rem;
+  }
+
+  .photography p {
+    width: 18.2rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 12.8rem;
+    left: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: var(--light);
+    color: var(--white);
+  }
+
+  .motion-graphics {
+    width: 33.3rem;
+    height: 18.2rem;
+    background-color: var(--darkPurple);
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .motion-graphics img {
+    position: absolute;
+    top: 2.4rem;
+    left: 18.1rem;
+  }
+
+  .motion-graphics p {
+    width: 22.7rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 12.8rem;
+    left: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: var(--light);
+    color: var(--white);
+  }
+
+  #about {
+    width: 77.2rem;
+    height: 36.4rem;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -4.4rem;
+  }
+
+  .designer {
+    width: 36.4rem;
+    height: 36.4rem;
+  }
+
+  .designer img {
+    width: 36.4rem;
+    height: 36.4rem;
+  }
+
+  .heading {
+    width: 33.9rem;
+    height: 36.4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading h2 {
+    color: var(--black);
+    font-size: 3.2rem;
+    font-weight: var(--light);
+  }
+
+  .heading p {
+    color: var(--mediumBrown);
+    font-size: 1.8rem;
+    font-weight: var(--light);
+    line-height: 2.6rem;
+    margin-top: 2.7rem;
+  }
+
+  .designer-consultation {
+    width: 22.8rem;
+    height: 5.6rem;
+    border: none;
+    margin-top: 2.4rem;
+    border-radius: 2.8rem;
+    background: var(--lightRed);
+    color: var(--lightCream);
+    font-size: 1.6rem;
+    font-weight: var(--light);
+    line-height: 2.8rem;
+  }
+
+  .designer-consultation:hover {
+    background: var(--summerYellow);
+  }
+
+  #projects {
+    width: 282rem;
+    height: 57.6rem;
+    position: absolute;
+    left: -104.5rem;
+    margin-top: 12rem;
+    /* overflow: hidden; */
+  }
+
+  #projects h3 {
+    color: var(--black);
+    font-size: 3.2rem;
+    font-weight: var(--light);
+    text-align: center;
+  }
+
+  .projects-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    margin-top: 5.7rem;
+    transition: transform 0.5s;
+    overflow: hidden;
+  }
+
+  .projects-slider img {
+    width: 54rem;
+    height: 36rem;
+    margin: 0rem 1.5rem 0rem 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .arrows {
+    width: 14.4rem;
+    height: 6.4rem;
+    position: absolute;
+    left: 135rem;
+    margin-top: 46rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .arrow-left-right {
+    width: 6.4rem;
+    height: 6.4rem;
+    background: var(--black);
+    background-blend-mode: normal;
+    border-radius: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrows img {
+    width: 1.48rem;
+    height: 1.6rem;
+  }
+
+  #footer {
+    width: 69rem;
+    height: 35.2rem;
+    background-color: var(--black);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5.6rem;
+    margin-top: 12rem;
+  }
+
+  .footer-heading {
+    width: 54rem;
+    height: 23.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-heading h3 {
+    width: 54rem;
+    height: 3.9rem;
+    color: var(--lightCream);
+    font-size: 3.2rem;
+    font-weight: var(--light);
+    text-align: center;
+  }
+
+  .footer-heading p {
+    width: 54rem;
+    height: 8.4rem;
+    color: var(--lightCream);
+    font-size: 1.8rem;
+    font-weight: var(--light);
+    line-height: 2.6rem;
+    text-align: center;
+  }
+
+  .footer-heading button {
+    width: 22.8rem;
+    height: 5.6rem;
+    border: none;
+    border-radius: 2.8rem;
+    background: var(--lightRed);
+    background-blend-mode: normal;
+    color: var(--lightCream);
+    font-size: 1.6rem;
+    font-weight: var(--light);
+    line-height: 2.8rem;
+  }
+
+  .footer-heading button:hover {
+    background-color: var(--summerYellow);
+  }
+
+  .footer-heading button:active {
+    transform: scale(0.9);
+  }
+
+  .slide {
+    transition: all 1s ease-in-out;
+  }
+}
+
 @media (width <= 768px) {
   #container {
     width: 76.8rem;
