@@ -523,7 +523,7 @@
   }
 
   .graphic-design {
-    grid-area: 1 / 1 / 3 / 2;
+    grid-area: 1 / 1 / 2 / 2;
     width: 33.3em;
     height: 36.4rem;
     background-color: var(--galacticBlue);
@@ -549,6 +549,7 @@
   }
 
   .ui-ux-apps {
+    grid-area: 1 / 2 / 2 / 3;
     width: 33.3rem;
     height: 18.2rem;
     display: grid;
@@ -607,6 +608,7 @@
   }
 
   .illustrations {
+    grid-area: 2 / 2 / 3 / 3;
     width: 33.3rem;
     height: 15.8rem;
     background-color: var(--lightRed);
@@ -632,6 +634,7 @@
   }
 
   .photography {
+    grid-area: 3 / 1 / 4 / 2;
     width: 33.3rem;
     height: 18.2rem;
     background-color: var(--cyan);
@@ -657,6 +660,7 @@
   }
 
   .motion-graphics {
+    grid-area: 3 / 2 / 4 / 3;
     width: 33.3rem;
     height: 18.2rem;
     background-color: var(--darkPurple);
@@ -950,18 +954,13 @@
     height: 116.4rem;
     display: grid;
     grid-template-columns: 34.3rem;
-    grid-template-areas:
-      "graphic-design"
-      "ui-ux-apps"
-      "illustrations"
-      "photography"
-      "motion-graphics";
+    grid-template-rows: 36.4rem 18.2rem 15.8rem 18.2rem 18.2rem;
     column-gap: 2.5rem;
     row-gap: 2.4rem;
   }
 
   .graphic-design {
-    grid-area: "graphic-design";
+    grid-area: 1 / 1 / 2 / 2;
     width: 34.3em;
     height: 36.4rem;
     background-color: var(--galacticBlue);
@@ -987,7 +986,7 @@
   }
 
   .ui-ux-apps {
-    grid-area: "ui-ux-apps";
+    grid-area: 2 / 1 / 3 / 2;
     width: 34.3rem;
     height: 18.2rem;
     display: grid;
@@ -1046,7 +1045,7 @@
   }
 
   .illustrations {
-    grid-area: "illustrations";
+    grid-area: 3 / 1 / 4 / 2;
     width: 34.3rem;
     height: 15.8rem;
     background-color: var(--lightRed);
@@ -1072,7 +1071,7 @@
   }
 
   .photography {
-    grid-area: "photography";
+    grid-area: 4 / 1 / 5 / 2;
     width: 34.3rem;
     height: 18.2rem;
     background-color: var(--cyan);
@@ -1098,7 +1097,7 @@
   }
 
   .motion-graphics {
-    grid-area: "motion-graphics";
+    grid-area: 5 / 1 / 6 / 2;
     width: 34.3rem;
     height: 18.2rem;
     background-color: var(--darkPurple);

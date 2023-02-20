@@ -47,7 +47,6 @@ if (window.innerWidth <= 375) {
 
   rightArrow.addEventListener("click", rightClick);
 } else if (window.innerWidth <= 768) {
-  console.log("radi");
   const leftClick = () => {
     y = "";
     rightArrow.style.opacity = 1;
