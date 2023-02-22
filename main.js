@@ -85,4 +85,43 @@ if (window.innerWidth <= 375) {
   };
 
   rightArrow.addEventListener("click", rightClick);
+} else {
+  const leftClick = () => {
+    y = "";
+    rightArrow.style.opacity = 1;
+    if (x === "") {
+      current--;
+      slider.style.transform = `translateX(${-current * 570}px)`;
+    }
+    if (
+      document
+        .querySelector(".projects-slider")
+        .style.transform.replace(/[^\d.]/g, "") === "1140"
+    ) {
+      leftArrow.style.opacity = 0;
+      x = "560";
+    }
+  };
+
+  leftArrow.addEventListener("click", leftClick);
+
+  const rightClick = () => {
+    x = "";
+    leftArrow.style.opacity = 1;
+    if (y === "") {
+      current++;
+      slider.style.transform = `translateX(${-current * 570}px)`;
+    }
+
+    if (
+      document
+        .querySelector(".projects-slider")
+        .style.transform.replace(/[^\d.]/g, "") === "1140"
+    ) {
+      rightArrow.style.opacity = 0;
+      y = "560";
+    }
+  };
+
+  rightArrow.addEventListener("click", rightClick);
 }
