@@ -7,22 +7,33 @@ let x = "";
 let y = "";
 let current = 0;
 
-let imgDimension = 570;
+let imgDimension = 0;
 
-function reportWindowSize() {
+const reportWindowSize = () => {
+  reload();
   if (window.innerWidth <= 375) {
     imgDimension = 280;
   } else if (window.innerWidth <= 768) {
     imgDimension = 570;
+  } else {
+    imgDimension = 570;
   }
-}
-reportWindowSize();
-window.onresize = reportWindowSize;
+};
 
-function sum() {
-  let sumDim = imgDimension * 2;
-  return sumDim.toString();
-}
+const reload = () => {
+  if (
+    window.innerWidth === 375 ||
+    window.innerWidth === 768 ||
+    window.innerWidth === 1440
+  ) {
+    location.reload();
+  }
+};
+
+const sum = () => {
+  let sumDimension = imgDimension * 2;
+  return sumDimension.toString();
+};
 
 const leftClick = () => {
   y = "";
@@ -62,3 +73,6 @@ const rightClick = () => {
 };
 
 rightArrow.addEventListener("click", rightClick);
+
+window.onresize = reportWindowSize;
+reportWindowSize();
